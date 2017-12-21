@@ -12,9 +12,9 @@ This set of instructions creates a base from which network packets are collected
 *	Run the following command "sudo apt-get clean" <= this is important is using a small size MMC
 	
 Now for the changes to be made to the raspi-config so run the command "raspi-config" and change the following via the menus
-	*	set memory split to 16
-	*	resize the partition
-	*	update raspi-config
+*	set memory split to 16
+*	resize the partition
+*	update raspi-config
 	
 Reboot the RPI for all changes to take effect.
 
