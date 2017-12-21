@@ -1,8 +1,10 @@
 # rpi-tcpdumpd
 
-Installing tcpdumpd along with systemd configs to run the process
+Installing tcpdump along with systemd configs to run the process
 
 Install PolicyKit 1 "sudo apt-get install policykit1"
+
+Install TCPdump "sudo apt-get install tcpdump"
 
 copy the file tcpdumpd.service in this repository into the following directory /etc/systemd/services
 
