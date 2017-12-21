@@ -19,15 +19,16 @@ Now for the changes to be made to the raspi-config so run the command "raspi-con
 Reboot the RPI for all changes to take effect.
 
 RPI overclocking - by James Hayden
-	James has completed a number of articles, in which he has found a good set of overclocking values for the RPI variants.
-	These are well worth the read and could gain you extra performance, your choice please read.
-	https://haydenjames.io/raspberry-pi-safe-overclocking-settings/ <= RPI 
-	https://haydenjames.io/raspberry-pi-2-overclock/ <= RPI v2
-	https://haydenjames.io/raspberry-pi-3-overclock/ <= RPI v3
+
+James has completed a number of articles, in which he has found a good set of overclocking values for the RPI variants.
+These are well worth the read and could gain you extra performance, your choice please read.
+*	https://haydenjames.io/raspberry-pi-safe-overclocking-settings/ <= RPI 
+*	https://haydenjames.io/raspberry-pi-2-overclock/ <= RPI v2
+*	https://haydenjames.io/raspberry-pi-3-overclock/ <= RPI v3
 	
 Setup a RamDisk on the RPI edit the fstab run "sudo nano /etc/fstab" and append the following line
 "tmpfs		/data		tmpfs	defaults,noatime,nosuid,mode=0777,size=80m"
-or id memory size greater than 512Mb
+OR if memory size greater than 512Mb
 "tmpfs		/data		tmpfs	defaults,noatime,nosuid,mode=0777,size=148m"
 
 This is the base for the network data collector. Sub folders relate to different tool options based upon this.
