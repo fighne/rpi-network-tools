@@ -26,10 +26,16 @@ These are well worth the read and could gain you extra performance, your choice 
 *	https://haydenjames.io/raspberry-pi-2-overclock/ <= RPI v2
 *	https://haydenjames.io/raspberry-pi-3-overclock/ <= RPI v3
 	
-Setup a RamDisk on the RPI edit the fstab run "sudo nano /etc/fstab" and append the following line
+Setup a RamDisk on the RPI
+edit the fstab run "sudo nano /etc/fstab" and append the following line
+
 "tmpfs		/data		tmpfs	defaults,noatime,nosuid,mode=0777,size=80m"
+
 OR if memory size greater than 512Mb
+
 "tmpfs		/data		tmpfs	defaults,noatime,nosuid,mode=0777,size=148m"
+
+example fstab file included in repository
 
 This is the base for the network data collector. Sub folders relate to different tool options based upon this.
 
